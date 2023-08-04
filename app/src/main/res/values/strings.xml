@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+    <string name="amount">Amount</string>
+    <string name="interest">Interest%</string>
+    <string name="period">Period</string>
+    <string name="emi">EMI</string>
+    <string name="monthlyEMI">Monthly EMI</string>
+    <string name="totalinterest">Total Interest</string>
+    <string name="totalpayment">Total Payment</string>
+    <string name="monthlyEMIValue">0</string>
+    <string name="totalInterestValue">0</string>
+    <string name="totalPaymentValue">0</string>
+</resources>
