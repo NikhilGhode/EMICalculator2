@@ -47,17 +47,20 @@ class MainActivity : AppCompatActivity() {
         val period = editPeriod.text.toString().toIntOrNull()
 
         if (amount != null && interest != null && period != null) {
-            val rate = interest / 100.0
-            val monthlyInterest = rate / 12.0
-            val numberOfMonths = if (radioGroup.checkedRadioButtonId == R.id.radioOption1) {
-                period * 12
-            } else {
-                period
-            }
+            var total_payment : Double
+            var total_interest : Double
+            var monthly_emi : Double
 
-            var total_payment = ((interest/100) * amount) * period + amount
-            var total_interest = ((interest/100) * amount) * period
-            var monthly_emi = total_payment/numberOfMonths
+            if(radioGroup.checkedRadioButtonId == R.id.radioOption1){
+                total_payment = ((interest/100) * amount) * period + amount
+                total_interest = ((interest/100) * amount) * period
+                monthly_emi = total_payment/(period * 12)
+            }
+            else{
+                total_payment = ((interest/100) * amount) * (period / 12)+ amount
+                total_interest = ((interest/100) * amount) * (period / 12)
+                monthly_emi = total_payment/period
+            }
 
             monthlyemioutput.text = String.format("%.2f", monthly_emi)
             totalInterestOutput.text = String.format("%.2f", total_interest)
