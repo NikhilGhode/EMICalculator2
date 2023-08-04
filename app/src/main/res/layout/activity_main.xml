@@ -136,7 +136,7 @@
                     android:hint="@string/periodhint"
                     android:layout_weight="1"
                     android:textColorHint="#60FFFFFF"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/white"
                     />
 

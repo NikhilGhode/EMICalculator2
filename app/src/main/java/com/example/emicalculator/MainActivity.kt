@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
     private fun calculateEMI() {
         val amount = editAmount.text.toString().toDoubleOrNull()
         val interest = editInterest.text.toString().toDoubleOrNull()
-        val period = editPeriod.text.toString().toIntOrNull()
+        val period = editPeriod.text.toString().toDoubleOrNull()
+
 
         if (amount != null && interest != null && period != null) {
             var total_payment : Double
