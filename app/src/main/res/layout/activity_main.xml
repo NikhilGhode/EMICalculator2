@@ -27,6 +27,8 @@
             android:paddingEnd="30dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,9 +69,9 @@
                     android:id="@+id/editAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
                     android:paddingLeft="20dp"
-                    android:hint="Ex. 20000"
+                    android:paddingRight="20dp"
+                    android:hint="@string/amounthint"
                     android:ems="13"
                     android:textColorHint="#60FFFFFF"
                     android:inputType="number"
@@ -98,12 +100,12 @@
                     android:id="@+id/editInterest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
                     android:paddingLeft="20dp"
-                    android:hint="Ex. 6%"
+                    android:paddingRight="20dp"
+                    android:hint="@string/interesthint"
                     android:ems="13"
                     android:textColorHint="#60FFFFFF"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/white"
                     />
             </TableRow>
@@ -129,9 +131,9 @@
                     android:id="@+id/editPeriod"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
                     android:paddingLeft="20dp"
-                    android:hint="Ex. 2"
+                    android:paddingRight="20dp"
+                    android:hint="@string/periodhint"
                     android:layout_weight="1"
                     android:textColorHint="#60FFFFFF"
                     android:inputType="number"
@@ -142,6 +144,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
                     android:id="@+id/radioGroup">
 
                     <RadioButton
@@ -152,7 +155,7 @@
                         android:textColor="@color/white"
                         android:buttonTint="@color/white"
                         android:checked="true"
-                        android:text="Year" />
+                        android:text="@string/radioyear" />
 
                     <RadioButton
                         android:id="@+id/radioOption2"
@@ -161,7 +164,7 @@
                         android:layout_weight="1"
                         android:textColor="@color/white"
                         android:buttonTint="@color/white"
-                        android:text="Month" />
+                        android:text="@string/radiomonth" />
 
                 </RadioGroup>
             </TableRow>
@@ -185,9 +188,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/background"
+                    android:background="@drawable/ripple_effect"
                     android:textColor="@color/white"
-                    android:text="Calculate" />
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="5"
+                    android:text="@string/calculatetext" />
 
                 <View
                     android:layout_width="0dp"
@@ -208,6 +213,31 @@
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/warningMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/warning"
+                    android:textSize="13sp"
+                    android:textColor="@color/red"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+
             </TableRow>
 
             <TableRow>

@@ -10,4 +10,11 @@
     <string name="monthlyEMIValue">0</string>
     <string name="totalInterestValue">0</string>
     <string name="totalPaymentValue">0</string>
+    <string name="warning">Enter all fields</string>
+    <string name="amounthint">Ex. 20000</string>
+    <string name="interesthint">Ex. 3.5%</string>
+    <string name="periodhint">Ex. 2</string>
+    <string name="radioyear">Year</string>
+    <string name="radiomonth">Month</string>
+    <string name="calculatetext">Calculate</string>
 </resources>
