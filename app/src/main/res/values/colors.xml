@@ -5,5 +5,6 @@
     <color name= "background">#1c3c64</color>
     <color name= "bottomBackground">#3669a2</color>
     <color name="red">#FF0000</color>
-    <color name="buttonColor">#1c3c64</color>
+    <color name="buttonColor">#1a73e9</color>
+    <color name="textcolor">#1c2330</color>
 </resources>
