@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.emicalculator'
+    namespace 'com.andbeta.emicalculator'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.emicalculator"
+        applicationId "com.andbeta.emicalculator"
         minSdk 21
         targetSdk 33
         versionCode 1
